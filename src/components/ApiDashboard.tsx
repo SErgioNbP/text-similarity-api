@@ -6,7 +6,7 @@ import { formatDistance } from 'date-fns';
 import LargeHeading from '@/ui/LargeHeading';
 import { Input } from '@/ui/Input';
 import Paragraph from '@/ui/Paragraph';
-import Table from '@/components/Table';
+import Table from '@/components/ui/Table';
 import ApiKeyOptions from '@/components/ApiKeyOptions';
 
 const ApiDashboard = async () => {
@@ -39,7 +39,7 @@ const ApiDashboard = async () => {
   );
 
   return (
-    <div className="container flex flex-col gap-6">
+    <div className='container flex flex-col gap-6'>
       <LargeHeading>Welcome back, {user.user.name}</LargeHeading>
       <div
         className="flex flex-col md:flex-row gap-4 justify-center
