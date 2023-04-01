@@ -10,3 +10,11 @@ export interface RevokeApiData {
   error: string | ZodIssue[] | null;
   success: boolean;
 }
+
+export interface ApiRequest {
+  id: string;
+  usedApiKey: string;
+  path: string;
+  duration: number;
+  status: string;
+}
